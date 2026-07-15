@@ -10,7 +10,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-
+CLAUDE.md
 # Generated indices (rebuildable from corpus/)
 chroma_db/
 indices/
