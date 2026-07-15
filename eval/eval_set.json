@@ -1,0 +1,458 @@
+[
+  {
+    "id": "s01",
+    "question": "What is the default initial capacity of a HashMap?",
+    "ground_truth_answer": "16.",
+    "source_passage": "the default initial capacity (16) and the default load factor (0.75).",
+    "source_file": "java.util.HashMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s02",
+    "question": "Does HashMap allow null keys and null values?",
+    "ground_truth_answer": "Yes. HashMap permits null values and the null key.",
+    "source_passage": "permits null values and the null key",
+    "source_file": "java.util.HashMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s03",
+    "question": "Does HashMap guarantee the order of its entries?",
+    "ground_truth_answer": "No. The class makes no guarantees as to the order of the map, and does not guarantee that the order will remain constant over time.",
+    "source_passage": "makes no guarantees as to the order of the map",
+    "source_file": "java.util.HashMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s04",
+    "question": "How does HashMap differ from Hashtable?",
+    "ground_truth_answer": "HashMap is roughly equivalent to Hashtable, except that it is unsynchronized and permits nulls.",
+    "source_passage": "unsynchronized and permits nulls",
+    "source_file": "java.util.HashMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s05",
+    "question": "What time complexity does ArrayList's add operation have?",
+    "ground_truth_answer": "Amortized constant time — adding n elements requires O(n) time.",
+    "source_passage": "The add operation runs in amortized constant time",
+    "source_file": "java.util.ArrayList.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s06",
+    "question": "Which ArrayList operations run in constant time?",
+    "ground_truth_answer": "size, isEmpty, get, set, iterator, and listIterator.",
+    "source_passage": "operations run in constant time",
+    "source_file": "java.util.ArrayList.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s07",
+    "question": "What data structure does LinkedList implement?",
+    "ground_truth_answer": "A doubly-linked list implementation of the List and Deque interfaces.",
+    "source_passage": "Doubly-linked list implementation of the List and Deque interfaces",
+    "source_file": "java.util.LinkedList.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s08",
+    "question": "How does LinkedList traverse the list when you index into it?",
+    "ground_truth_answer": "It traverses from the beginning or the end, whichever is closer to the specified index.",
+    "source_passage": "whichever is closer to the specified index",
+    "source_file": "java.util.LinkedList.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s09",
+    "question": "What does TreeMap.firstKey() return?",
+    "ground_truth_answer": "The first (lowest) key currently in the map. It throws NoSuchElementException if the map is empty.",
+    "source_passage": "Returns the first (lowest) key currently in this map",
+    "source_file": "java.util.TreeMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s10",
+    "question": "What does TreeMap.comparator() return if the map uses natural ordering?",
+    "ground_truth_answer": "null.",
+    "source_passage": "or null if this map uses the natural ordering",
+    "source_file": "java.util.TreeMap.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s11",
+    "question": "Can a PriorityQueue contain null elements?",
+    "ground_truth_answer": "No. A priority queue does not permit null elements.",
+    "source_passage": "A priority queue does not permit null elements",
+    "source_file": "java.util.PriorityQueue.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s12",
+    "question": "What is the head of a PriorityQueue?",
+    "ground_truth_answer": "The least element with respect to the specified ordering.",
+    "source_passage": "The head of this queue is the least element with respect to the specified order",
+    "source_file": "java.util.PriorityQueue.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s13",
+    "question": "What underlying structure is PriorityQueue based on?",
+    "ground_truth_answer": "A priority heap. It is an unbounded priority queue based on a priority heap.",
+    "source_passage": "based on a priority heap",
+    "source_file": "java.util.PriorityQueue.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s14",
+    "question": "What does ArrayDeque.poll() return when the deque is empty?",
+    "ground_truth_answer": "null.",
+    "source_passage": "or returns null if this deque is empty",
+    "source_file": "java.util.ArrayDeque.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s15",
+    "question": "What is the difference between ArrayDeque's element() and peek() methods?",
+    "ground_truth_answer": "element() differs from peek() only in that it throws an exception (NoSuchElementException) if the deque is empty, whereas peek() returns null.",
+    "source_passage": "only in that it throws an exception if this deque is empty",
+    "source_file": "java.util.ArrayDeque.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s16",
+    "question": "What kind of collection is the Stack class?",
+    "ground_truth_answer": "A last-in-first-out (LIFO) stack of objects, extending Vector.",
+    "source_passage": "The Stack class represents a last-in-first-out (LIFO) stack of objects",
+    "source_file": "java.util.Stack.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s17",
+    "question": "Which class does the documentation recommend using instead of Stack?",
+    "ground_truth_answer": "The Deque interface and its implementations (for example ArrayDeque) should be used in preference to Stack.",
+    "source_passage": "should be used in preference to this class",
+    "source_file": "java.util.Stack.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s18",
+    "question": "Is the position returned by Stack.search() zero-based or one-based?",
+    "ground_truth_answer": "One-based. It returns the 1-based position, and the topmost item is considered to be at distance 1.",
+    "source_passage": "Returns the 1-based position where an object is on this stack",
+    "source_file": "java.util.Stack.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s19",
+    "question": "What does Optional.orElse(other) do?",
+    "ground_truth_answer": "If a value is present it returns the value, otherwise it returns other.",
+    "source_passage": "If a value is present, returns the value, otherwise returns",
+    "source_file": "java.util.Optional.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s20",
+    "question": "What does the documentation say is the preferred alternative to Optional.get()?",
+    "ground_truth_answer": "orElseThrow().",
+    "source_passage": "The preferred alternative to this method is orElseThrow()",
+    "source_file": "java.util.Optional.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s21",
+    "question": "What sorting algorithm does Arrays.sort use for primitive arrays?",
+    "ground_truth_answer": "A Dual-Pivot Quicksort, which offers O(n log(n)) performance on all data sets.",
+    "source_passage": "The sorting algorithm is a Dual-Pivot Quicksort",
+    "source_file": "java.util.Arrays.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s22",
+    "question": "What happens if you call Arrays.binarySearch on an array that is not sorted?",
+    "ground_truth_answer": "The results are undefined.",
+    "source_passage": "If it is not sorted, the results are undefined.",
+    "source_file": "java.util.Arrays.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s23",
+    "question": "What is the maximum value of an int, according to Integer.MAX_VALUE?",
+    "ground_truth_answer": "2^31 - 1. It is a constant holding the maximum value an int can have.",
+    "source_passage": "A constant holding the maximum value an int can have, 2 31 -1",
+    "source_file": "java.lang.Integer.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s24",
+    "question": "What range of values does Math.random() return?",
+    "ground_truth_answer": "A double with a positive sign, greater than or equal to 0.0 and less than 1.0.",
+    "source_passage": "Returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0",
+    "source_file": "java.lang.Math.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "s25",
+    "question": "Which way does Math.round(double) round a tie?",
+    "ground_truth_answer": "Ties round to positive infinity. It returns the closest long to the argument.",
+    "source_passage": "Returns the closest long to the argument, with ties rounding to positive infinity",
+    "source_file": "java.lang.Math.html",
+    "query_type": "simple"
+  },
+  {
+    "id": "k01",
+    "question": "What does computeIfAbsent return?",
+    "ground_truth_answer": "The current (existing or computed) value associated with the specified key, or null if the computed value is null.",
+    "source_passage": "Returns: the current (existing or computed) value associated with the specified key, or null if the computed value is null",
+    "source_file": "java.util.HashMap.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k02",
+    "question": "What exception does orElseThrow() throw?",
+    "ground_truth_answer": "NoSuchElementException, if no value is present.",
+    "source_passage": "If a value is present, returns the value, otherwise throws NoSuchElementException",
+    "source_file": "java.util.Optional.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k03",
+    "question": "What does Objects.requireNonNull do and what does it throw?",
+    "ground_truth_answer": "It checks that the specified object reference is not null. It returns obj if not null, and throws NullPointerException if obj is null.",
+    "source_passage": "Checks that the specified object reference is not null",
+    "source_file": "java.util.Objects.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k04",
+    "question": "What does parseInt(\"Kona\", 27) return?",
+    "ground_truth_answer": "411787.",
+    "source_passage": "parseInt(\"Kona\", 27) returns 411787",
+    "source_file": "java.lang.Integer.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k05",
+    "question": "What does parseInt(\"2147483648\", 10) do?",
+    "ground_truth_answer": "It throws a NumberFormatException.",
+    "source_passage": "parseInt(\"2147483648\", 10) throws a NumberFormatException",
+    "source_file": "java.lang.Integer.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k06",
+    "question": "What exception does Math.floorMod throw?",
+    "ground_truth_answer": "ArithmeticException, if the divisor y is zero.",
+    "source_passage": "ArithmeticException - if the divisor y is zero",
+    "source_file": "java.lang.Math.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k07",
+    "question": "How does absExact differ from abs?",
+    "ground_truth_answer": "absExact throws an ArithmeticException when the result overflows the positive int range, whereas abs returns the same negative value for Integer.MIN_VALUE.",
+    "source_passage": "method throws an ArithmeticException for this value",
+    "source_file": "java.lang.Math.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k08",
+    "question": "What does Comparator.reversed() return?",
+    "ground_truth_answer": "A comparator that imposes the reverse ordering of this comparator.",
+    "source_passage": "Returns a comparator that imposes the reverse ordering of this",
+    "source_file": "java.util.Comparator.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k09",
+    "question": "What does Thread.startVirtualThread do?",
+    "ground_truth_answer": "It creates a virtual thread to execute a task and schedules it to execute.",
+    "source_passage": "Creates a virtual thread to execute a task and schedules it to execute",
+    "source_file": "java.lang.Thread.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "k10",
+    "question": "What does Stream.anyMatch return for an empty stream?",
+    "ground_truth_answer": "false, and the predicate is not evaluated.",
+    "source_passage": "If the stream is empty then false is returned and the predicate is not evaluated",
+    "source_file": "java.util.stream.Stream.html",
+    "query_type": "keyword_heavy"
+  },
+  {
+    "id": "p01",
+    "question": "How can I read a file one line at a time?",
+    "ground_truth_answer": "Use a BufferedReader, which buffers characters to provide efficient reading of characters, arrays, and lines; its readLine method reads a line of text.",
+    "source_passage": "buffering characters so as to provide for the efficient reading of characters, arrays, and lines",
+    "source_file": "java.io.BufferedReader.html",
+    "query_type": "paraphrase_heavy",
+    "alt_golds": [
+      {
+        "ground_truth_answer": "Use Files.lines(Path, Charset), which reads all lines from a file as a Stream that populates lazily as the stream is consumed.",
+        "source_passage": "populates lazily as the stream is consumed",
+        "source_file": "java.nio.file.Files.html"
+      }
+    ],
+    "gold_note": "BufferedReader.readLine and Files.lines are both correct answers to this question. The original single gold marked the Files.lines answer wrong."
+  },
+  {
+    "id": "p02",
+    "question": "Do I need to pick a buffer size when wrapping a reader, or is there a sensible default?",
+    "ground_truth_answer": "The buffer size may be specified, or the default size may be used. The default is large enough for most purposes.",
+    "source_passage": "The default is large enough for most purposes",
+    "source_file": "java.io.BufferedReader.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p03",
+    "question": "How do I pause the currently running thread for a while, and what can go wrong?",
+    "ground_truth_answer": "Use Thread.sleep. It throws IllegalArgumentException if the value of millis is negative, and InterruptedException if another thread interrupts the current thread; the interrupted status is cleared when that exception is thrown.",
+    "source_passage": "IllegalArgumentException - if the value of millis is negative",
+    "source_file": "java.lang.Thread.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p04",
+    "question": "Can I copy a thread object?",
+    "ground_truth_answer": "No. Thread.clone throws CloneNotSupportedException, because a Thread cannot be meaningfully cloned; you should construct a new Thread instead.",
+    "source_passage": "Throws CloneNotSupportedException as a Thread can not be meaningfully cloned",
+    "source_file": "java.lang.Thread.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p05",
+    "question": "What happens if I try to change a collection that was handed to me as a read-only view?",
+    "ground_truth_answer": "Attempts to modify it — directly, via its iterator, or via its views — result in an UnsupportedOperationException.",
+    "source_passage": "views, result in an UnsupportedOperationException",
+    "source_file": "java.util.Collections.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p06",
+    "question": "If I turn an array into a list, can I add elements to it afterwards?",
+    "ground_truth_answer": "No. Arrays.asList returns a fixed-size list backed by the specified array.",
+    "source_passage": "Returns a fixed-size list backed by the specified array",
+    "source_file": "java.util.Arrays.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p07",
+    "question": "What happens when I put an object that cannot be ordered into a sorted set?",
+    "ground_truth_answer": "The add call will throw a ClassCastException, because all elements inserted must be mutually comparable.",
+    "source_passage": "an element to the set that violates this constraint, the add call will throw a ClassCastException",
+    "source_file": "java.util.TreeSet.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p08",
+    "question": "Is copying an object with the built-in clone method a deep copy?",
+    "ground_truth_answer": "No. It performs a \"shallow copy\" of the object, not a \"deep copy\" operation — the fields' contents are not themselves cloned.",
+    "source_passage": "performs a \"shallow copy\" of this object, not a \"deep copy\" operation",
+    "source_file": "java.lang.Object.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p09",
+    "question": "Is it safe to check the number of entries in a concurrent map while other threads are writing to it?",
+    "ground_truth_answer": "Not for program control. size, isEmpty and containsValue are typically useful only when the map is not undergoing concurrent updates in other threads; otherwise their results reflect transient states adequate only for monitoring or estimation.",
+    "source_passage": "useful only when a map is not undergoing concurrent updates in other threads",
+    "source_file": "java.util.concurrent.ConcurrentHashMap.html",
+    "query_type": "paraphrase_heavy"
+  },
+  {
+    "id": "p10",
+    "question": "How do I glue a bunch of strings together with a separator between them?",
+    "ground_truth_answer": "Use Collectors.joining with a delimiter: it returns a Collector that concatenates the input elements, separated by the specified delimiter, in encounter order.",
+    "source_passage": "separated by the specified delimiter, in encounter order",
+    "source_file": "java.util.stream.Collectors.html",
+    "query_type": "paraphrase_heavy",
+    "alt_golds": [
+      {
+        "ground_truth_answer": "Use String.join(delimiter, elements), which returns a new String composed of copies of the CharSequence elements joined together with a copy of the specified delimiter.",
+        "source_passage": "Returns a new String composed of copies of the CharSequence elements joined together with a copy of the specified delimiter",
+        "source_file": "java.lang.String.html"
+      }
+    ],
+    "gold_note": "Collectors.joining and String.join are both correct answers to this question. The original single gold marked the String.join answer wrong."
+  },
+  {
+    "id": "u01",
+    "question": "Who invented the Java programming language and in what year?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u02",
+    "question": "How do I install the JDK on Windows?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u03",
+    "question": "How much does an Oracle Java SE subscription cost per year?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u04",
+    "question": "Which garbage collector does the JVM use by default?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u05",
+    "question": "How do I connect to a PostgreSQL database using JDBC?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u06",
+    "question": "What is the difference between Spring Boot and Quarkus?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u07",
+    "question": "What is the time complexity of Dijkstra's shortest path algorithm?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u08",
+    "question": "How do I write a Dockerfile for a Java application?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u09",
+    "question": "When was the most recent Java LTS release published?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  },
+  {
+    "id": "u10",
+    "question": "What is the capital city of France?",
+    "ground_truth_answer": "insufficient context",
+    "source_passage": "",
+    "source_file": "",
+    "query_type": "unanswerable"
+  }
+]

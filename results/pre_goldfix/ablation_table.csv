@@ -1,0 +1,5 @@
+config,faithfulness,answer_relevancy,context_precision,context_recall,refusal_rate_unanswerable,latency_p50_ms,latency_p95_ms,n_answerable,n_unanswerable
+dense_only,0.8881,0.8219,0.6883,0.9037,1.0,1122,1916,45,10
+sparse_only,0.8062,0.7689,0.6812,0.8148,1.0,761,1101,45,10
+hybrid,0.8926,0.8373,0.7427,0.8889,1.0,1141,1505,45,10
+hybrid_rerank,0.9333,0.8891,0.7461,0.9444,1.0,2340,6273,45,10

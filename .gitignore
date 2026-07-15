@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.claude/
+
+main.py
+RAG_Build_Guide_v1.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated indices (rebuildable from corpus/)
+chroma_db/
+indices/
+
+# IDE
+.idea/
